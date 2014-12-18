@@ -1,0 +1,145 @@
+codigo,especificacao_da_receita,receita_orcada,realizada_no_mes,pct_realizada_mes_sobre_o_orcado,realizada_ate_o_mes,pct_ate_o_mes_sobre_o_orcado
+10000000,RECEITAS CORRENTES,4776943000,480749503.74,10,3244927621.27,67.9
+11000000,RECEITA TRIBUTÁRIA,2301621000,255526700.38,11.1,1579698893.65,68.6
+11100000,IMPOSTOS,1783929000,176677723.01,9.9,1213979132.74,68
+11120000,Imposto s/ o patrimôno e a renda,712529000,70446725.67,9.8,540896190.78,75.9
+11120200,Imposto s/ a propriedade predial e territorial urbana,580330000,60811926.98,10.4,428643616.1,73.8
+11120201,Imposto sobre a propriedade predial urbano,548330000,57756036.75,10.5,410765304.75,74.8
+11120202,Imposto sobre a propriedade territorial urbana,31545000,3055890.83,9.6,17878311.35,56.6
+11120800,Imposto s/ transmissão Inter-vivos-ITBI-IV,132199000,16707692.16,12.6,88309977.85,66.8
+11120900,Receita Tributária a classificar,0,-7072893.47,0,23942596.83,0
+11130000,Imposto sobre produção e a ciculação,1071400000,106230997.34,9.9,673082941.96,62.8
+11130500,Imposto sobre serviço de qualquer natureza,1068700000,106193665.75,9.9,669888082.81,62.6
+11130700,imposto sobre a venda a varejo de combustivéis líquidos e gasosos-IVV,2700000,37331.59,1.3,3194859.15,118.3
+11200000,Taxas,516600000,78686826.78,15.2,364566496.87,70.5
+11210000,Taxa pelo exercicío do poder de policia,56030000,24475749.9,43.6,40423643.63,72.1
+11210100,"Taxa de licença para localização,funcionamento e instalação",32552000,20110073.69,61.7,26255305.7,80.6
+11210200,Taxa de licença para tráfego de veículos,0,0,0,123.02,0
+11210400,Taxa de fiscalização de anuncios,3860000,2425518.04,62.8,3207230.85,83
+11210600,Taxa de licença para construção de arruamentos e loteamentos,18340000,1845289.42,10,9481943.34,51.7
+11210601,Taxa de licença para construção de arruamentos e loteamentos,18340000,1721864.01,9.3,9032405.78,49.2
+11210603,axa de licença para construção de arruamentos e loteamentos-anistia,0,123425.41,0,449537.56,0
+11210700,Taxa de licença para elev.monta cargas e escadas rolantes,1278000,94868.75,7.4,1479040.72,115.7
+11220000,Taxa pela prestação de serviços,460570000,54211076.88,11.7,324142853.24,70.3
+11220100,Taxa de limpeza pública,370427000,45329896.3,12.2,258628017.49,69.8
+11220200,Taxa de conservação de vias e logradouros públicos,73653000,6708357.1,9.1,54138865.37,73.5
+11220400,Taxa de combate a sinistro,16420000,2154663.65,13.1,11302741.69,68.8
+11220500,Taxa de estudos p/ fixação de diretrizes,70000,18159.83,25.9,73228.69,104.6
+11300000,Contribuições de melhoria,1092000,140616.95,12.8,745676,68.2
+11900000,Receita a classificar-DAMSP,0,21533.64,0,407588.04,0
+13000000,Receita patrimonial,112227000,4135730.86,3.6,38377137.22,34.2
+13100000,Receitas Imobiliárias,4240000.001,531927.98,12.5,3461923.67,81.6
+13110000,"Rendas de mercados, feiras e matadouros",2303000,226428.91,9.8,1040108.86,45.1
+13110001,"Rendas de mercados, feiras e matadouros-sistema Velho",0,8691.63,0,54362.6,0
+13110002,"Rendas de mercados, feiras e matadouros-sistema novo",2303000,217737.28,9.4,985746.26,42.8
+13120000,Receita do estádio municipal,345000,0,0,589291.94,170.8
+13130000,Receita de teatros,639000.001,24223.12,3.7,171200.02,26.7
+13130100,Receita de teatros-PMSP,639000.001,0,0,0,0
+13130200,Receita de teatros-FEPAC,0.001,24223.12,0,171200.02,0
+13140000,Receita do autodromo,66000,18894.05,28.6,123963.74,187.8
+13150000,Receita do kartodromo,38000.001,6896.13,18.1,36793.77,96.8
+13160000,Receita de permissão de atividades ambulantes,496000,34767.88,7,198561.82,40
+13170000,Receita das unidades educacionais e esportivas,31000,125484.93,404.7,225444.4,727.2
+13180000,Outras receitas de próprios municipais,322000,95232.96,29.5,1076559.12,334.3
+13200000,Receitas de valores mobiliários,107996000,3603802.88,3.3,34915213.55,32.3
+13210000,Resultado das aplicações financeiras,107996000,3599059.97,3.3,34854300.09,32.3
+13210001,Resultado das aplicações financeiras-PMSP,107996000,693273.39,0.6,5199044.49,4.9
+13210002,Resultado das aplicações financeiras-FUMDES,0.001,2674583.81,0,26768298.77,0
+13210004,Resultado das aplicações financeiras-CAM.MUNICIPAL,0.001,64726.96,0,631832.49,0
+13210005,Resultado das aplicações financeiras-T.C.M,0.001,24153.32,0,216849.42,0
+13210600,Resultado das aplicações financeiras-CEF-VL-BLOQ,0.001,379.65,0,92590.64,0
+13210700,Resultado das aplicações financeiras-FEPAC,0,15693.89,0,454724.73,0
+13211000,Resultado das aplicações financeiras-FUNCAD,0.001,706.87,0,3237.79,0
+13211100,Resultado das aplicações financeiras-FUTUR,0.001,7.59,0,59.64,0
+13211200,Resultado de aplicações financeiras- dec n 35051 de 11/04/95,0.001,8367.45,0,706866.95,0
+13211300,"Resultado das aplicações financeiras-Operações Interligadas-lei n 11773,95",0,117167.04,0,780795.17,0
+13230000,Participação de dividendos,1000,4742.91,474.2,4742.91,474.2
+13240000,encargos e remunerações de receita,0,0,0,56170.55,0
+15000000,Receita Industrial,368000,34838.01,9.4,239993.55,65.2
+15200000,Receita da Industria de transformação,368000,34838.01,9.4,239993.55,65.2
+15210000,Receita da gráfica municipal,63000,1801.66,2.8,49559.89,78.6
+15220000,Receita de subprodutos da limpeza pública,305000,33036.35,10.8,190433.66,62.4
+16000000,Receita de serviços,21867000,2749770.81,12.5,17833303,81.5
+16100000,Serviços de expediente,2449000,358970.87,14.6,2914661.48,119
+16200000,Coleta de residuos solidos-LIMPURB,0,1352535.23,0,7965505.58,0
+16400000,Receito de registro de profissionais e firmas,6000,0,0,0,0
+16500000,Serviços de depositos,0,0,0,82,0
+16600000,Receita de permissão para a exploração de serviços de taxis,4480000,371768.09,8.3,2167028.88,48.3
+16700000,Serviços diversos,14094000,585532.94,4.1,4453869.41,31.6
+16800000,Tarifa de pedágio para ingresso nas ruas de pedestres,588000,33492.41,5.7,105073.97,17.8
+16900000,Requisiçoes de serviços- Fisc,250000,47471.27,18.9,227181.68,90.8
+17000000,Transferências correntes,2010710000,180749580.88,8.9,1308109569.84,65
+17200000,Transferências Intergovernamentais,2010698000,180749580.88,8.9,1308109569.84,65
+17210000,Transferências da União,270230000,22285351.61,8.2,100415607.3,37.1
+17210100,Participação na receita da União,108399000,9627506.35,8.8,66842052.92,61.6
+17210101,Cotaparte do fundo de participação dos municipios,21952000,1840059.08,8.3,13813335.88,62.9
+17210104,Transferencia do imp.s/a renda ret.nas fontes,86412000,7785672.79,9,52865344.11,61.1
+17210105,Transferencia do imp.s/a prop.territ. Rural,35000,1774.48,5,163372.93,466.7
+17210900,Outras transferências da União,161831000,12597845.26,7.7,33573554.38,20.7
+17210907,Transf. da União - FUNDES,0,4376637.88,0,25273277.14,0
+17210909,Transf. da União - Outras transferencias,161831000,8214218.66,5,8227868.83,5
+17210911,transferências da união-DNAEE,0,6988.72,0,72408.41,0
+17220000,Transferencias dos Estados,1740468000,158524229.27,9.1,1207693962.54,69.3
+17220100,Participação na receita dos Estados,1740468000,158524229.27,9.1,1207639219.36,69.3
+17220101,Cota-Parte do I.P.V.A,364803000,12538141.69,3.4,346497346.71,95.8
+17220102,Cota-Parte do I.C.M.S,1355094000,144304334.18,10.6,846682942.15,62.4
+17220103,Cota-Parte participacipação do estado na arrecadação do IPI,20571000,1681753.4,8.1,11458930.5,55.7
+17220900,Outras transferências dos Estados,0,0,0,54743.18,0
+17220911,Transferencias dos Estados-FUTUR,0,0,0,54743.18,0
+17300000,TRANSFERÊNCIAS DE INSTITUIÇÕES PRIVADAS,12000,0,0,0,0
+17310000,Transferências pessoas fisicas e juridicas do pais ,12000,0,0,0,0
+17310900,Transferências pessoas fisicas e juridicas do pais-PMSP ,120000,0,0,0,0
+19000000,OUTRAS RECEITAS CORRENTES,330150000,37552882.8,11.3,300668724.01,91
+19100000,MULTAS E JUROS DE MORA,153637000,18187209.47,11.8,112139800.29,72.9
+19110000,Multas e juros de mora dos tributos,35174000,5294022.69,15,25718734.21,73.1
+19120000,Multas de outras origens,118463000,12893186.78,10.8,86421066.08,72.9
+19120100,Multas de Transito,0,11292072.4,0,62240413.69,0
+19120300,Multas. Sar-Sistema Novo,0,489721.31,0,3018942.38,0
+19120500,Multas de Outras origens,118463000,83884.5,0,812888.18,0.6
+19120600,Multas de Outras origens-FUNDOS,0,4375.19,0,79003.18,0
+19120605,Multas de Outras origens-FUNCAD,0,4375.19,0,79003.18,0
+19120700,Multas de Transito.-Veiculos de outros municipios,0,1023133.38,0,20269818.1,0
+19200000,INDENIZACOES E RESTITUIÇÕES,2850000,440.08,0,5261851.95,184.6
+19210000,Indenizações ,0,440.08,0,4031.59,0
+19210300,comp.financeira pela ext.do oleo bruto e gas,0,440.08,0,4031.59,0
+19220000,Restituições,2850000,0,0,5257820.36,184.4
+19300000,RECEITA DA DÍVIDA ATIVA,114829000,11930586.12,10.3,57931568.97,50.4
+19310000,Receita da dívida ativa tributária,98114000,10721764.39,10.9,51783040.68,52.7
+19320000,Receita da dívida ativa não tributária,16715000,1208821.73,7.2,6148528.29,36.7
+19320100,Receita da dívida ativa não tributária-FISC,16715000,1208821.73,7.2,6148528.29,36.7
+19900000,RECEITAS DIVERSAS,58834000,7434647.13,12.6,125335502.8,213
+19910000,Receita de contribuições estabelecidas em contratos,773000,64507.17,8.3,540001.29,69.8
+19920000,"Receita da junta administrativa, da casa propria.",0,0,0,21.96,0
+19930000,Receita de cancelamentos de restos a pagar,23035000,1738210.37,7.5,89639606.56,389.1
+19940000,Eventuais diversos,35026000,5631929.59,16,35155872.99,100.3
+19940100,Eventuais diversos-PMSP,35026000,4572227.64,13,26570162.61,75
+19940200,Eventuais diversos-Honarários Advocaticios,0,18005.27,0,241878.7,0
+19940500,Eventuais Diversos-FEPAC,0,5004.74,0,9692.38,0
+19940800,Eventuais Diversos-FABES-DECG. 34385/94,0,787693.26,0,6990253.29,0
+19940900,Eventuais Diversos- Remoção de estadia 36.013 DE 17/04/96,0,248998.68,0,1343886.01,0
+20000000,RECEITAS DE CAPITAL,1343057000,15301222.98,1.1,632147642.06,47
+21000000,0PERAÇÕES DE CRÉDITO,1077316000,584971.92,0,599813634.48,55.6
+21100000,OPERAÇÕES DE CRÉDITO INTERNAS,798324000,584971.92,0,599813634.48,75.1
+21110000,Colocação de Títulos do Tesouro Municipal,508324000,0,0,590778905,116.2
+21120000,Emprestimos por Contratos Internos-PMSP,290000000,584971.92,0.2,9034729.48,3.1
+21200000,OPERAÇÕES DE CRÉDITO EXTERNAS,278992000,0,0,0,0
+21210000,Emprestimos p/Contratos Externos-PMSP,278992000,0,0,0,0
+22000000,ALIENAÇÃO DE BENS,250000000,0,0,0,0
+22100000,ALIENAÇÃO DE BENS MÓVEIS,250000000,0,0,0,0
+24000000,TRANSFERÊNCIAS DE CAPITAL,891000,1932.41,0.2,366407.91,41.1
+24200000,TRANSFERÊNCIAS INTERGOVERNAMENTAIS,891000,1932.41,0.2,366407.91,41.1
+24210000,Transferencias da União,891000,1932.41,0.2,333013.64,37.3
+24210900,Outras transferências da União,891000,1932.41,0.2,333013.64,37.3
+24210901,Outras transferências da União-PMSP,891000,0,0,0,0
+24210902,Outras transferências da União-Fundo Esp. Lei 7225/86,0,1932.41,0,13013.64,0
+24210911,Outras transferências da União-FNDE,0,0,0,320000,0
+24220000,Transferências dos Estados,0,0,0,33394.27,0
+24220900,Outras transferências dos Estados,0,0,0,33394.27,0
+24220901,Outras transferências dos Estados-PMSP,0,0,0,33394.27,0
+25000000,OUTRAS RECEITAS DE CAPITAL,14850000,14714318.65,99,31967599.67,215.2
+25900000,OUTRAS RECEITAS,14850000,14714318.65,99,31967599.67,215.2
+25910900,OUTRAS RECEITAS-PMSP,14850000,11614651.47,78.2,11620073.38,78.2
+25911000,OUTRAS RECEITAS-DEC N 35051-11/04/95,0,1038351.77,0,4084074.35,0
+95910000,OUTRAS RECEITAS-DIVERSAS,14850000,14714318.65,99,31967599.67,215.2
+95911100,Operações interligadas-lei 11.77/95,0,2061315.41,0,16263451.94,0
+,TOTAL,6120000000,496050726.72,8.1,3877075263.33,63.3
