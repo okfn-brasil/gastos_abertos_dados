@@ -1,0 +1,548 @@
+                                             TABELA DE CODIFICAÇÃO DAS RECEITAS                                        IN 015/2012
+                                                                                                                          Anexo V
+                                                     VÁLIDO A PARTIR DE 2013
+
+Código                  Especificação                                                                                                Tipo
+1000.00.00              Receitas Correntes                                                                                      Sintética
+  1100.00.00            Receita Tributária                                                                                      Sintética
+    1110.00.00          Impostos                                                                                                Sintética
+      1112.00.00        Impostos sobre o Patrimônio e a Renda                                                                   Sintética
+        1112.01.00      ITR - Imposto sobre a Propriedade Territorial Rural - Municípios Conveniados                            Analítica
+        1112.02.00      IPTU - Imposto sobre a Propriedade Predial e Territorial Urbana                                         Analítica
+        1112.04.00      Imposto sobre a Renda e Proventos de Qualquer Natureza                                                  Sintética
+           1112.04.31   IRRF - Imposto de Renda Retido nas Fontes sobre os Rendimentos do Trabalho                              Analítica
+           1112.04.34   IRRF - Imposto de Renda Retido nas Fontes sobre Outros Rendimentos                                      Analítica
+        1112.08.00      ITBI - Imposto sobre Transmissão "Inter Vivos" de Bens Imóveis e de Direitos Reais sobre Imóveis        Analítica
+      1113.00.00        Impostos sobre a Produção e a Circulação                                                                Sintética
+         1113.05.00     ISS - Imposto sobre Serviços de Qualquer Natureza                                                       Sintética
+           1113.05.01   ISS - Imposto sobre Serviços de Qualquer Natureza                                                       Analítica
+           1113.05.02   Adicional ISS - Fundo Municipal de Combate à Pobreza                                                    Analítica
+    1120.00.00          Taxas                                                                                                   Sintética
+      1121.00.00        Taxas pelo Exercício do Poder de Polícia                                                                Sintética
+        1121.03.00      Taxa de Controle e Fiscalização de Produtos Químicos                                                    Analítica
+        1121.17.00      Taxa de Fiscalização de Vigilância Sanitária                                                            Analítica
+        1121.20.00      Taxa de Saúde Suplementar                                                                               Sintética
+           1121.20.99   Outras Taxas de Saúde Suplementar                                                                       Analítica
+        1121.21.00      Taxa de Controle e Fiscalização Ambiental                                                               Analítica
+        1121.24.00      Taxa de Fiscalização sobre a Distribuição Gratuita de Prêmios e Sorteios                                Analítica
+        1121.25.00      Taxa de Licença para Funcionamento de Estabelecimentos Comerciais, Indústria e Prestadora de Serviços   Analítica
+        1121.26.00      Taxa de Publicidade Comercial                                                                           Analítica
+        1121.27.00      Taxa de Apreensão e Depósito                                                                            Analítica
+        1121.28.00      Taxa de Funcionamento de Estabelecimentos em Horário Especial                                           Analítica
+        1121.29.00      Taxa de Licença para Execução de Obras                                                                  Analítica
+        1121.30.00      Taxa de Autorização de Funcionamento de Transporte                                                      Analítica
+        1121.31.00      Taxa de Utilização de Área de Domínio Público                                                           Analítica
+        1121.32.00      Taxa de Aprovação do Projeto de Contrução Civil                                                         Analítica
+        1121.34.00      Taxa de Fiscalização de Aparelhos de Transporte                                                         Analítica
+        1121.35.00      Taxa de Alinhamento e Nivelamento                                                                       Analítica
+        1121.36.00      Taxa de Apreensão, Depósito ou Liberação de Animais                                                     Analítica
+        1121.99.00      Outras Taxas pelo Exercício do Poder de Polícia                                                         Analítica
+      1122.00.00        Taxas pela Prestação de Serviços                                                                        Sintética
+        1122.12.00      Emolumentos e Custas Processuais Administrativas                                                        Sintética
+           1122.12.01   Emolumentos e Custas de Apreciação de Atos e Contratos                                                  Analítica
+        1122.21.00      Taxas de Serviços Cadastrais                                                                            Analítica
+        1122.28.00      Taxa de Cemitérios                                                                                      Analítica
+        1122.90.00      Taxa de Limpeza Pública                                                                                 Analítica
+        1122.99.00      Outras Taxas pela Prestação de Serviços                                                                 Analítica
+    1130.00.00          Contribuição de Melhoria                                                                                Sintética
+        1130.01.00      Contribuição de Melhoria para Expansão da Rede de Água Potável e Esgoto Sanitário                       Analítica
+        1130.02.00      Contribuição de Melhoria para Expansão da Rede de Iluminação Pública na Cidade                          Analítica
+        1130.03.00      Contribuição de Melhoria para Expansão da Rede de Iluminação Pública Rural                              Analítica
+        1130.04.00      Contribuição de Melhoria para Pavimentação e Obras Complementares                                       Analítica
+        1130.99.00      Outras Contribuições de Melhoria                                                                        Analítica
+  1200.00.00            Receitas de Contribuições                                                                               Sintética
+    1210.00.00          Contribuições Sociais                                                                                   Sintética
+        1210.29.00      Contribuições Previdenciárias do Regime Próprio                                                         Sintética
+           1210.29.01   Contribuição Patronal para o Regime Próprio de Previdência                                              Analítica
+           1210.29.03   Contribuição Patronal - Inativo Civil                                                                   Analítica
+           1210.29.05   Contribuição Patronal - Pensionista Civil                                                               Analítica
+           1210.29.07   Contribuição do Servidor Ativo Civil para o Regime Próprio de Previdência                               Analítica
+           1210.29.09   Contribuições de Servidor Inativo Civil para o Regime Próprio de Previdência                            Analítica
+           1210.29.11   Contribuições de Servidor Pensionista Civil para o Regime Próprio de Previdência                        Analítica
+           1210.29.13   Contribuição Previdenciária para Amortização do Déficit Atuarial                                        Analítica
+           1210.29.15   Contribuição Previdenciária em Regime de Parcelamento de Débitos                                        Analítica
+           1210.29.16   Contribuição Patronal, oriunda do Pagamento de Sentenças Judiciais                                      Analítica
+           1210.29.17   Contribuição do Servidor Ativo Civil, oriunda do Pagamento de Sentenças Judiciais                       Analítica
+           1210.29.18   Contribuição do Servidor Inativo Civil, oriunda do Pagamento de Sentenças Judiciais                     Analítica
+           1210.29.19   Contribuição de Pensionista Civil, oriunda do Pagamento de Sentenças Judiciais                          Analítica
+        1210.99.00      Outras Contribuições Sociais                                                                            Analítica
+    1220.00.00          Contribuições de Intervenção no Domínio Econômico                                                       Sintética
+       1220.06.03       Receita de Distribuição de Conteúdos Audiovisuais por Prestadores de Serviço de Acesso Condicionado     Analítica
+        1220.99.00      Outras Contribuições Econômicas                                                                         Analítica
+    1230.00.00          COSIP - Contribuição para o Custeio do Serviço de Iluminação Pública                                    Analítica
+  1300.00.00            Receita Patrimonial                                                                                     Sintética
+    1310.00.00          Receitas Imobiliárias                                                                                   Sintética
+      1311.00.00        Alugueis                                                                                                Analítica
+      1312.00.00        Arrendamentos                                                                                           Analítica
+      1313.00.00        Foros                                                                                                   Analítica
+
+                                                              Página 1 de 7
+                                          TABELA DE CODIFICAÇÃO DAS RECEITAS                                        IN 015/2012
+                                                                                                                       Anexo V
+                                                  VÁLIDO A PARTIR DE 2013
+
+Código                Especificação                                                                                               Tipo
+     1314.00.00       Laudêmios                                                                                               Analítica
+     1319.00.00       Outras Receitas Imobiliárias                                                                            Analítica
+   1320.00.00         Receitas de Valores Mobiliários                                                                         Sintética
+     1321.00.00       Juros de Títulos de Renda                                                                               Analítica
+     1322.00.00       Dividendos                                                                                              Analítica
+     1323.00.00       Participações                                                                                           Analítica
+     1325.00.00       Remuneração de Depósitos Bancários (Esta conta será sintética caso seja utilizado seu desdobramento)    Analítica
+     1325.01.00       Remuneração de Depósitos de Recursos Vinculados                                                         Sintética
+     1325.01.01       Receita de Remuneração de Depósitos Bancários de recursos Vinculados - Royalties                        Analítica
+     1325.01.02       Receita de Remuneração de Depósitos Bancários de recursos Vinculados - FUNDEF/FUNDEB                    Analítica
+     1325.01.03       Receita de Remuneração de Depósitos Bancários de recursos Vinculados - Fundo de Saúde                   Analítica
+     1325.01.04       Receita de Remuneração de Depósitos Bancários de recursos Vinculados - RPPS                             Analítica
+                      Receita de Remuneração de Depósitos Bancários de Recursos Vinculados - Manutenção e Desenvolvimento
+     1325.01.05       do Ensino - MDE                                                                                         Analítica
+                      Receita de Remuneração de Depósitos Bancários de Recursos Vinculados - Ações e Serviços Públicos de
+     1325.01.06       Saúde                                                                                                   Analítica
+     1325.01.07       Receita de Remuneração de Depósitos Bancários de Recursos Vinculados - FUNDETUR                         Analítica
+                      Receita de Remuneração de Depósitos Bancários de Recursos Vinculados - Contribuição de Intervenção no
+     1325.01.09       Domínio Econômico (CIDE)                                                                                Analítica
+                      Receita de Remuneração de Depósitos Bancários de Recursos Vinculados - Fundo Nacional de Assistência
+     1325.01.10       Social (FNAS)                                                                                           Analítica
+     1325.01.99       Receita de Remuneração de Outros Depósitos Bancários de recursos Vinculados                             Analítica
+     1325.02.00       Remuneração de Depósitos de Recursos não Vinculados                                                     Sintética
+     1325.02.01       Receita de Remuneração de Depósitos de Poupança                                                         Analítica
+     1325.02.02       Remuneração de Aplicação Extramercado                                                                   Analítica
+     1325.02.99       Remuneração de Outros Depósitos De Recursos não vinculados                                              Analítica
+     1326.00.00       Remuneração de Depósitos Especiais                                                                      Analítica
+     1327.00.00       Remuneração de Saldos de Recursos Não Desembolsados                                                     Analítica
+     1328.00.00       Remuneração dos Investimentos do Regime Próprio de Previdência do Servidor                              Sintética
+       1328.10.00     Remuneração dos Investimentos do Regime Próprio de Previdência do Servidor em Renda Fixa                Analítica
+       1328.20.00     Remuneração dos Investimentos do Regime Próprio de Previdência do Servidor em Renda Variável            Analítica
+       1328.30.00     Remuneração dos Investimentos do Regime Próprio de Previdência do Servidor em Fundos Imobiliários       Analítica
+     1329.00.00       Outras Receitas de Valores Imobiliários                                                                 Analítica
+   1330.00.00         Receita de Concessões e Permissões                                                                      Sintética
+     1331.00.00       Receita de Concessões e Permissões - Serviços                                                           Sintética
+       1331.99.00     Outras Receita de Concessões e Permissões - Serviços                                                    Analítica
+     1339.00.00       Outras Receitas de Concessões e Permissões                                                              Analítica
+   1390.00.00         Outras Receitas Patrimoniais                                                                            Analítica
+   1360.00.00         Receita da Cessão de Direitos                                                                           Sintética
+   1361.00.00         Receita de Cessão do Direito de Operacionalização de Pagamentos                                         Sintética
+   1361.01.00         Receita de Cessão do Direito de Operacionalização da Folha de Pagamento de Pessoal                      Analítica
+   1361.02.00         Receita de Cessão do Direito de Operacionalização da Folha de Pagamento de Benefícios                   Analítica
+   1361.03.00         Receita de Cessão do Direito de Operacionalização de Pagamento a Fornecedores                           Analítica
+   1390.00.00         Outras Receitas Patrimoniais                                                                            Analítica
+ 1400.00.00           Receita Agropecuária                                                                                    Sintética
+   1410.00.00         Receita de Produção Vegetal                                                                             Analítica
+   1420.00.00         Receita de Produção Animal e Derivados                                                                  Analítica
+   1490.00.00         Outras Receitas Agropecuárias                                                                           Analítica
+ 1500.00.00           Receita Industrial                                                                                      Sintética
+   1520.00.00         Receita da Indústria de Transformação                                                                   Sintética
+       1520.12.00     Receita da Indústria Mecânica                                                                           Analítica
+       1520.20.00     Receita da Indústria Química                                                                            Analítica
+       1520.21.00     Receita da Indústria de Produtos Farmacêuticos e Veterinários                                           Analítica
+       1520.26.00     Receita da Indústria de Produtos Alimentares                                                            Analítica
+       1520.27.00     Receita da Indústria de Bebidas e Destilados                                                            Analítica
+       1520.28.00     Receita da Usina de Tratamento de Lixo                                                                  Analítica
+       1520.29.00     Receita da Indústria Editoral e Gráfica                                                                 Analítica
+       1520.30.00     Receita da Indústria Eletrônica                                                                         Analítica
+       1520.99.00     Outras Receitas da Indústria de Transformação                                                           Analítica
+   1530.00.00         Receita da Indústria de Construção                                                                      Analítica
+   1590.00.00         Outras Receitas Industriais                                                                             Analítica
+ 1600.00.00           Receita de Serviços                                                                                     Sintética
+       1600.01.00     Serviços Comerciais                                                                                     Sintética
+         1600.01.01   Serviços de Comercialização de Medicamentos                                                             Analítica
+         1600.01.02   Serviços de Comercialização de Livros, Periódicos, Materiais Escolares e Publicidades                   Analítica
+         1600.01.03   Serviços de Comercialização e Distribuição de Produtos Agropecuários                                    Analítica
+         1600.01.06   Serviço de Comercialização de Produtos, Dados e Materiais de Informática                                Analítica
+         1600.01.99   Outros Serviços Comerciais                                                                              Analítica
+       1600.02.00     Serviços Financeiros                                                                                    Sintética
+         1600.02.01   Serviços de Juros de Impréstimos                                                                        Analítica
+         1600.02.02   Serviços da Taxa Pela Concessão de Aval do Tesouro                                                      Analítica
+         1600.02.04   Serviços Financeiros de Garantia da Atividade Agrapecuária                                              Analítica
+
+                                                           Página 2 de 7
+                                            TABELA DE CODIFICAÇÃO DAS RECEITAS                                           IN 015/2012
+                                                                                                                            Anexo V
+                                                     VÁLIDO A PARTIR DE 2013
+
+Código                Especificação                                                                                                    Tipo
+         1600.02.06   Serviços de Remuneração Sobre Repasse Para Programas de Desenvolvimento Econômico                           Analítica
+         1600.02.07   Serviços de Comissões pela Prestação de Garantia                                                            Analítica
+         1600.02.99   Outros Serviços Financeiros                                                                                 Analítica
+       1600.03.00     Serviços de Transporte                                                                                      Sintética
+         1600.03.01   Serviços de Transporte Rodoviário                                                                           Analítica
+         1600.03.03   Serviço de Transporte Hidroviário                                                                           Analítica
+         1600.03.06   Receita de Terminais Rodoviários                                                                            Analítica
+         1600.03.99   Outros Serviços de Transporte                                                                               Analítica
+       1600.04.00     Serviços de Comunicação                                                                                     Analítica
+       1600.05.00     Serviços de Saúde                                                                                           Sintética
+         1600.05.01   Serviços Hospitalares                                                                                       Analítica
+         1600.05.03   Serviços Radiológicos e Laboratoriais                                                                       Analítica
+         1600.05.05   Serviços de Assistência à Saúde Suplementar do Servidor Civil                                               Analítica
+         1600.05.10   Serviços Ambulatoriais                                                                                      Analítica
+         1600.05.99   Outros Serviços de Saúde                                                                                    Analítica
+       1600.06.00     Serviços Portuários                                                                                         Analítica
+       1600.07.00     Serviços de Armazenagem                                                                                     Analítica
+       1600.08.00     Serviços de Processamento de Dados                                                                          Analítica
+       1600.10.00     Serviços de Informações Estatísticas                                                                        Analítica
+       1600.12.00     Serviços Tecnológicos                                                                                       Analítica
+       1600.13.00     Serviços Administrativos                                                                                    Sintética
+         1600.13.01   Serviços de Inscrição em Concursos Públicos                                                                 Analítica
+         1600.13.02   Serviços de Venda de Editais                                                                                Analítica
+         1600.13.03   Serviços Especiais PM/Bombeiro                                                                              Analítica
+         1600.13.04   Serviços de Expedição de Certificados                                                                       Analítica
+         1600.13.06   Serviços de Fornecimento de Listagens                                                                       Analítica
+         1600.13.07   Serviços de Fotocópias e / ou Cópias Heliográficas                                                          Analítica
+         1600.13.99   Outros Serviços Administrativos                                                                             Analítica
+       1600.14.00     Serviços de Inspeção e Fiscalização                                                                         Analítica
+       1600.16.00     Serviços Educacionais                                                                                       Analítica
+       1600.17.00     Serviços Agropecuários                                                                                      Analítica
+       1600.18.00     Serviços de Reparação, Manutenção e Instalação                                                              Analítica
+       1600.22.00     Serviços de Estudos e Pesquisas                                                                             Analítica
+       1600.24.00     Serviços de Registro do Comércio                                                                            Analítica
+       1600.26.00     Serviços de Fornecimento de Água                                                                            Analítica
+       1600.28.00     Serviços de Geoprocessamento                                                                                Analítica
+       1600.29.00     Serviço de Cadastramento de Fornecedores                                                                    Analítica
+       1600.41.00     Serviços de Captação, Adução, Tratamento, Reservação e Distribuição de Água                                 Analítica
+       1600.42.00     Serviços de Coleta, Transporte, Tratamento e Destino Final de Esgotos                                       Analítica
+       1600.43.00     Serviços de Coleta, Transporte, Tratamento e Destino Final de Resíduos Sólidos                              Analítica
+       1600.44.00     Serviço de Abate de Animais                                                                                 Analítica
+       1600.45.00     Serviços de Preparação da Terra em Propriedades Particulares                                                Analítica
+       1600.46.00     Serviços de Cemitério                                                                                       Analítica
+       1600.47.00     Serviços de Iluminação Pública                                                                              Analítica
+       1600.48.00     Serviços de Religamento de Água                                                                             Analítica
+       1600.50.00     Tarifas de Inscrição em Concursos e Processos Seletivos                                                     Analítica
+       1600.99.00     Outros Serviços                                                                                             Analítica
+ 1700.00.00           Transferências Correntes                                                                                    Sintética
+   1720.00.00         Transferências Intergovernamentais                                                                          Sintética
+     1721.00.00       Transferências da União                                                                                     Sintética
+       1721.01.00     Participação na Receita da União                                                                            Sintética
+         1721.01.02   Cota-Parte do FPM - Fundo de Participação dos Municípios                                                    Analítica
+         1721.01.05   Cota-Parte do ITR - Imposto sobre a Propriedade Territorial Rural                                           Analítica
+         1721.01.32   Cota-Parte - Comercialização do Ouro                                                                        Analítica
+       1721.22.00     Transferência da Compensação Financeira pela Exploração de Recursos Naturais                                Sintética
+         1721.22.11   Cota-parte da Compensação Financeira de Recursos Hídricos                                                   Analítica
+         1721.22.20   Cota-parte da Compensação Financeira de Recursos Minerais - CFEM                                            Analítica
+         1721.22.30   Cota-parte Royalties - Compensação Financeira pela Produção de Petróleo - Lei nº 7.990/89                   Analítica
+         1721.22.40   Cota-Parte Royalties pelo Excedente da Produção do Petróleo - Lei n° 9.478/97, Artigo 49, I e II            Analítica
+         1721.22.50   Cota-Parte Royalties Pela Participação Especial Lei N° 9.478/97, Artigo 50                                  Analítica
+         1721.22.70   Cota-Parte do FEP - Fundo Especial do Petróleo                                                              Analítica
+         1721.22.90   Outras Transferências de Compensação Financeira pela Exploração de Recursos Naturais                        Analítica
+       1721.33.00     SUS - Sistema Único de Saúde - Repasses Fundo a Fundo                                                       Analítica
+       1721.34.00     FNAS - Fundo Nacional de Assistência Social                                                                 Analítica
+       1721.35.00     FNDE - Fundo Nacional do Desenvolvimento da Educação                                                        Sintética
+         1721.35.01   Transferências do Salário-Educação                                                                          Analítica
+         1721.35.02   PDDE - Programa Dinheiro Direto na Escola                                                                   Analítica
+         1721.35.03   PNAE - Programa Nacional de Alimentação Escolar                                                             Analítica
+         1721.35.04   PNATE - Programa Nacional de Apoio ao Transporte do Escolar                                                 Analítica
+         1721.35.99   Outras Transferências Diretas do FNDE                                                                       Analítica
+       1721.36.00     ICMS - Desoneração - L.C. Nº 87/96                                                                          Analítica
+       1721.37.00     Transferências a Consórcios Públicos                                                                        Analítica
+       1721.99.00     Outras Transferências da União                                                                              Analítica
+
+                                                               Página 3 de 7
+                                           TABELA DE CODIFICAÇÃO DAS RECEITAS                                        IN 015/2012
+                                                                                                                        Anexo V
+                                                   VÁLIDO A PARTIR DE 2013
+
+Código                Especificação                                                                                                Tipo
+     1722.00.00       Transferências do Estado                                                                                 Sintética
+       1722.01.00     Participação na Receita do Estado                                                                        Sintética
+         1722.01.01   Cota-Parte do ICMS - Imposto sobre a Circulação de Mercadorias e Prestação de Serviços                   Analítica
+         1722.01.02   Cota-Parte do IPVA - Imposto sobre a Propriedade de Veículos Automotores                                 Analítica
+         1722.01.04   Cota-Parte do IPI - Imposto sobre Produtos Industrializados - Exportação                                 Analítica
+         1722.01.13   Cota-Parte da CIDE - Contribuição de Intervanção no Domínio Econômico                                    Analítica
+         1722.01.99   Outras Participações na Receita do Estado                                                                Analítica
+       1722.22.00     Transferência da Cota-parte da Compensação Financeira (25%)                                              Sintética
+         1722.22.11   Cota-Parte da Compensação Financeira de Recursos Hídricos                                                Analítica
+         1722.22.20   Cota-Parte da Compensação Financeira de Recursos Minerais - CFEM                                         Analítica
+         1722.22.30   Cota-Parte Royalties - Compensação Financeira pela Produção do Petróleo - Lei nº 7.990/89, artigo 9º     Analítica
+         1722.22.90   Outras Transferências Decorrentes de Compensações Financeiras                                            Analítica
+       1722.33.00     SUS - Sistema Único de Saúde - Repasses Fundo a Fundo                                                    Analítica
+       1722.37.00     Consorcios Públicos                                                                                      Analítica
+       1722.99.00     Outras Transferências do Estado                                                                          Analítica
+     1723.00.00       Transferências dos Municípios                                                                            Sintética
+       1723.01.00     SUS - Sistema Único de Saúde                                                                             Analítica
+       1723.37.00     Consorcios Públicos                                                                                      Analítica
+       1723.99.00     Outras Transferências dos Municípios                                                                     Analítica
+     1724.00.00       Transferências Multigovernamentais                                                                       Sintética
+       1724.01.00     Transferências do FUNDEB                                                                                 Analítica
+       1724.02.00     Complementação do FUNDEB                                                                                 Analítica
+       1724.99.00     Outras Transferências Multigovernamentais                                                                Analítica
+   1730.00.00         Transferências de Instituições Privadas                                                                  Analítica
+   1740.00.00         Transferências do Exterior                                                                               Analítica
+   1750.00.00         Transferências de Pessoas                                                                                Analítica
+   1760.00.00         Transferências de Convênios                                                                              Sintética
+     1761.00.00       Convênios da União e de Suas Entidades                                                                   Sintética
+       1761.01.00     SUS - Sistema Único de Saúde                                                                             Analítica
+       1761.02.00     Programas de Educação                                                                                    Analítica
+       1761.03.00     Programas de Assistência Social                                                                          Analítica
+       1761.04.00     Programas de Combate à Fome                                                                              Analítica
+       1761.05.00     Programas de Saneamento Básico                                                                           Analítica
+       1761.99.00     Outras Transferências de Convênios da União                                                              Analítica
+     1762.00.00       Convênios do Estado e de Suas Entidades                                                                  Sintética
+       1762.01.00     SUS - Sistema Único de Saúde                                                                             Analítica
+       1762.02.00     Programas de Educação                                                                                    Analítica
+       1762.99.00     Outras Transferências de Convênio do Estado                                                              Analítica
+     1763.00.00       Convênios dos Municípios e de Suas Entidades                                                             Sintética
+       1763.01.00     SUS - Sistema Único de Saúde                                                                             Analítica
+       1763.02.00     Programas de Educação                                                                                    Analítica
+       1763.99.00     Outras Transferências de Convênios dos Municípios                                                        Analítica
+     1764.00.00       Transferências de Convênios de Instituições Privadas                                                     Analítica
+     1765.00.00       Transferência de Convênios do Exterior                                                                   Analítica
+   1770.00.00         Transferências Para o Combate a Fome                                                                     Sintética
+     1771.00.00       Provenientes do Exterior                                                                                 Analítica
+     1772.00.00       Provenientes de Pessoas Jurídicas                                                                        Analítica
+     1773.00.00       Provenientes de Pessoas Físicas                                                                          Analítica
+     1774.00.00       Provenientes de Depósitos não Identificados                                                              Analítica
+ 1900.00.00           Outras Receitas Correntes                                                                                Sintética
+   1910.00.00         Multas e Juros de Mora                                                                                   Sintética
+     1911.00.00       Multas e Juros de Mora dos Tributos                                                                      Sintética
+       1911.08.00     Multas e Juros de Mora do ITR - Imposto sobre a Propriedade Territorial Rural                            Sintética
+         1911.08.01   Multas e Juros de Mora do ITR - Imposto sobre a Propriedade Territorial Rural - Municípios Conveniados   Analítica
+         1911.35.00   Multas e Juros da Taxa de Fiscalização e Vigilância Sanitária                                            Analítica
+         1911.38.00   Multas e Juros de Mora do IPTU - Imposto sobre a Propriedade Territorial Urbana                          Analítica
+         1911.39.00   Multas e Juros de Mora do ITBI - Imposto sobre a Transferência de Bens Imóveis                           Analítica
+         1911.40.00   Multas e Juros de Mora do ISS - Imposto sobre Serviços                                                   Analítica
+         1911.98.00   Multas e Juros de Mora de Contribuições de Melhoria                                                      Analítica
+         1911.99.00   Multas e Juros de Mora de Outros Tributos                                                                Analítica
+     1912.00.00       Multas e Juros de Mora das Contribuições                                                                 Sintética
+       1912.29.00     Multas e Juros de Mora das Contribuições para o Regime Próprio de Previdência do Servidor                Sintética
+         1912.29.01   Multas e Juros de Mora da Contribuição Patronal para o Regime Próprio de Previdência                     Analítica
+         1912.29.02   Multas e Juros de Mora da Contribuição do Servidor para o Regime Próprio de Previdência                  Analítica
+       1912.56.00     Multas e Juros de Mora das Compensações Financeiras entre o Regime Geral e os RPPS                       Analítica
+       1912.99.00     Multas e Juros de Mora de Outras Contribuições                                                           Sintética
+         1912.99.01   Multas e Juros de Mora de Outras Contribuições - Principal                                               Analítica
+         1912.99.02   Multas e Juros de Mora de Outras Contribuições - Programa Recuperação Fiscal e Parcelamento Especial     Analítica
+     1913.00.00       Multas e Juros de Mora da Dívida Ativa dos Tributos                                                      Sintética
+     1913.02.00       Multas e Juros de Mora da Divida Ativa do Imposto sobre a Renda e Proventos de Qualquer Natureza         Sintética
+       1913.02.03     Multas e Juros de Mora da Divida Ativa do Imposto sobre a Renda Retido nas Fontes                        Analítica
+       1913.08.00     Multas e Juros de Mora da Dívida Ativa do ITR - Imposto sobre a Propriedade Territorial Rural            Analítica
+
+
+                                                            Página 4 de 7
+                                             TABELA DE CODIFICAÇÃO DAS RECEITAS                                           IN 015/2012
+                                                                                                                             Anexo V
+                                                     VÁLIDO A PARTIR DE 2013
+
+Código                  Especificação                                                                                                   Tipo
+
+        1913.11.00      Multas e Juros de Mora da Dívida Ativa do IPTU - Imposto Sobre a Propriedade Predial e Territorial Urbana   Analítica
+        1913.12.00      Multas e Juros de Mora da Dívida Ativa do ITBI - Imposto Sobre a Transmissão Inter - Vivos e Bens Imóveis   Analítica
+        1913.13.00      Multas e Juros de Mora da Dívida Ativa do ISS - Imposto sobre Serviços de Qualquer Natureza                 Analítica
+        1913.35.00      Multas e Juros de Mora da Dívida Ativa das Taxas de Fiscalização e Vigilância Sanitária                     Analítica
+        1913.98.00      Multas e Juros de Mora da Dívida Ativa das Contribuições de Melhoria                                        Analítica
+        1913.99.00      Multas e Juros de Mora da Divida Ativa de Outros Tributos                                                   Analítica
+      1914.00.00        Multa e Juros de Mora da Dívida Ativa das Contribuições                                                     Sintética
+        1914.99.00      Multas e Juros de Mora da Dívida Ativa de Outras Contribuições                                              Analítica
+      1918.00.00        Multas e Juros de Mora de Outras Receitas                                                                   Sintética
+                        Multas e Juros de Mora do Ressarcimento Decorrente de Ações Regressivas Oriundas de Relação de
+      1918.21.00        Trabalho                                                                                                    Analítica
+      1918.23.00        Multa e Juros de Mora Decorrentes da Restituição de Recursos de Fomento                                     Analítica
+        1918.99.00      Outras Multas e Juros de Mora                                                                               Analítica
+      1919.00.00        Multas de Outras Origens                                                                                    Sintética
+        1919.15.00      Multas Previstas na Legislação de Trânsito                                                                  Analítica
+        1919.18.00      Multas sobre a Fiscalização da Rede de Produção Orgânica                                                    Analítica
+        1919.26.00      Multas Previstas na Legislação sobre Defesa dos Direitos Difusos                                            Analítica
+        1919.35.00      Multas por Danos Ambientais                                                                                 Analítica
+        1919.35.10      Multas Administrativas por Danos Ambientais                                                                 Analítica
+        1919.35.20      Multas Judiciais por Danos Ambientais                                                                       Analítica
+        1919.50.00      Multas por Auto de Infração                                                                                 Analítica
+        1919.99.00      Outras Multas                                                                                               Analítica
+    1920.00.00          Indenizações e Restituições                                                                                 Sintética
+      1921.00.00        Indenizações                                                                                                Sintética
+        1921.05.00      Indenizações previstas na Legisação sobre Defesa de Direitos Difusos                                        Analítica
+        1921.06.00      Indenizações por Danos Causados ao Patrimônio Público                                                       Analítica
+        1921.99.00      Outras Indenizações                                                                                         Analítica
+      1922.00.00        Restituições                                                                                                Sintética
+        1922.01.00      Restituições de Convênios                                                                                   Analítica
+        1922.02.00      Restituições de Benefícios não Desembolsados                                                                Analítica
+        1922.22.00      Ressarcimento Decorrente de Ações Regressivas Oriundas de Relação de Trabalho                               Analítica
+        1922.23.00      Restituição de Recursos de Fomento                                                                          Analítica
+        1922.10.00      Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência dos Servidores           Analítica
+        1922.99.00      Outras Restituições                                                                                         Analítica
+        1923.01.00      Retorno de Investimentos Mediante Participação em Empresas e Projetos                                       Analítica
+    1930.00.00          Receita da Dívida Ativa                                                                                     Sintética
+      1931.00.00        Receita da Dívida Ativa Tributária                                                                          Sintética
+        1931.04.00      Dívida Ativa do ITR - Imposto sobre a Propriedade Territorial Rural                                         Analítica
+        1931.11.00      Dívida Ativa do IPTU - Imposto sobre a Propriedade Territorial Urbana                                       Analítica
+        1931.12.00      Dívida Ativa do ITBI - Imposto sobre a Transferência de Bens Imóveis                                        Analítica
+        1931.13.00      Dívida Ativa do ISS - Imposto sobre Serviços                                                                Analítica
+        1931.35.00      Taxas de Fiscalização e Vigilância Sanitária                                                                Analítica
+        1931.98.00      Contribuições de Melhoria                                                                                   Analítica
+        1931.99.00      Receita da Dívida Ativa de Outros Tributos                                                                  Analítica
+      1932.00.00        Receita da Dívida Ativa não Tributária                                                                      Sintética
+        1932.11.00      Receita da Dívida Ativa de Aluguéis                                                                         Analítica
+        1932.13.00      Receita da Dívida Ativa de Taxa de Ocupação                                                                 Analítica
+        1932.14.00      Receita da Dívida Ativa de Arrendamento                                                                     Analítica
+        1932.99.00      Receita da Dívida Ativa não Tributária de Outras Receitas                                                   Analítica
+    1940.00.00          Receitas Decorrentes de Aportes Periódicos para Amortização de Déficit Atuarial do RPPS                     Analítica
+    1990.00.00          Receitas Diversas                                                                                           Sintética
+        1990.02.00      Receita de Ônus de Sucumbência de Ações Judiciais                                                           Sintética
+           1990.02.01   Receita de Honorários de Advogados                                                                          Analítica
+           1990.02.02   Receita de Ônus de Sucumbência                                                                              Analítica
+        1990.03.00      Receita Decorrente de Alienação de Bens Apreendidos                                                         Sintética
+           1990.03.01   Receita de Leilões de Mercadorias Apreendidas                                                               Analítica
+           1990.03.02   Receita de Alienação de Bens Apreendidos                                                                    Analítica
+           1990.03.03   Receita de Alienação de Bens Caucionados                                                                    Analítica
+           1990.03.04   Receita de Alienação de Bens Apreendidos Associados ao Tráfico Ilícito de Entorpecentes e Drogas Afins      Analítica
+        1990.08.00      Demais Receitas para o Desenvolvimento do Desporto                                                          Analítica
+        1990.21.00      Receita de Seguros decorrente da Indenização por Sinistro                                                   Analítica
+        1990.99.00      Outras Receitas                                                                                             Sintética
+           1990.99.99   Cancelamento de Restos a Pagar                                                                              Analítica
+2000.00.00              Receitas de Capital                                                                                         Sintética
+  2100.00.00            Operações de Crédito                                                                                        Sintética
+    2110.00.00          Operações de Crédito Internas                                                                               Sintética
+      2114.00.00        Operações de Crédito Internas Contratuais Relativas à Programas de Governo                                  Sintética
+        2114.01.00      Operações de Crédito Internas para Programas de Educação                                                    Analítica
+        2114.02.00      Operações de Crédito Internas para Programas de Saúde                                                       Analítica
+        2114.03.00      Operações de Crédito Internas para Programas de Saneamento                                                  Analítica
+        2114.04.00      Operações de Crédito Internas para Programas de Meio Ambiente                                               Analítica
+        2114.05.00      Operações de Crédito Internas para Programas de Modernização da Administração Pública                       Analítica
+                                                               Página 5 de 7
+                                          TABELA DE CODIFICAÇÃO DAS RECEITAS                                  IN 015/2012
+                                                                                                                 Anexo V
+                                                  VÁLIDO A PARTIR DE 2013
+
+Código                Especificação                                                                                         Tipo
+       2114.06.00     Operações de Crédito Internas para Refinanciamento da Dívida Contratual                          Analítica
+       2114.07.00     Operações de Crédito Internas para Programas de Moradia Popular                                  Analítica
+       2114.99.00     Outras Operações de Crédito Internas - Contratuais                                               Analítica
+     2119.00.00       Outras Operações de Créditos                                                                     Analítica
+   2120.00.00         Operações de Crédito Externas                                                                    Sintética
+     2122.00.00       Títulos de Responsabilidade do Tesouro                                                           Sintética
+       2122.01.00     Títulos de Responsabilidade do Tesouro - Refinanciamento da Dívida Pública                       Analítica
+       2122.02.00     Títulos de Responsabilidade do Tesouro - Outras Aplicações                                       Analítica
+     2123.00.00       Operações de Crédito Externas - Contratuais                                                      Sintética
+       2123.01.00     Operações de Crédito Externas para Programas de Educação                                         Analítica
+       2123.02.00     Operações de Crédito Externas para Programas de Saúde                                            Analítica
+       2123.03.00     Operações de Crédito Externas para Programas de Saneamento                                       Analítica
+       2123.04.00     Operações de Crédito Externas para Programas de Meio Ambiente                                    Analítica
+       2123.05.00     Operações de Crédito Externas para Programas de Modernização da Administração Pública            Analítica
+       2123.07.00     Operações de Crédito Externas para Refinanciamento da Dívida Contratual                          Analítica
+       2123.99.00     Outras Operações de Crédito Externas - Contratuais                                               Analítica
+     2129.00.00       Outras Operações de Créditos Externas                                                            Analítica
+ 2200.00.00           Alienação de Bens                                                                                Sintética
+   2210.00.00         Alienação de Bens Móveis                                                                         Sintética
+     2211.00.00       Alienação de Títulos Mobiliários                                                                 Analítica
+     2212.00.00       Alienação de Estoques                                                                            Sintética
+       2212.03.00     Alienação de Estoques Destinados a Programas Sociais e Institucionais                            Analítica
+       2212.07.00     Alienação de Estoques do Programa de Aquisição de Alimentos - PAA                                Analítica
+       2212.99.00     Outras Aplicações de Estoques                                                                    Analítica
+     2214.00.00       Alienação de Animais Reprodutores e Matrizes                                                     Analítica
+     2215.00.00       Alienação de Veículos                                                                            Analítica
+     2217.00.00       Alienação de Equipamentos                                                                        Analítica
+     2219.00.00       Alienação de Outros Bens Móveis                                                                  Analítica
+   2220.00.00         Alienação de Bens Imóveis                                                                        Sintética
+     2221.00.00       Alienação de Imóveis Rurais para Colonização e Reforma Agrária                                   Analítica
+     2223.00.00       Alienação de Embarcações                                                                         Analítica
+     2224.00.00       Alienação de Imóveis Rurais                                                                      Analítica
+     2225.00.00       Alienação de Imóveis Urbanos                                                                     Analítica
+     2229.00.00       Alienação de Outros Bens Imóveis                                                                 Analítica
+ 2300.00.00           Amortização de Empréstimos                                                                       Sintética
+       2300.40.00     Amortização de Empréstimos - Refinanciamento de Dívida de Médio e Longo Prazo                    Analítica
+       2300.70.00     Outras Amortizações de Empréstimos                                                               Sintética
+         2300.70.01   Amortização de Empréstimos - Em Títulos                                                          Analítica
+         2300.70.02   Amortização de Empréstimos - Em Contratos                                                        Analítica
+       2300.80.00     Amortização de Financiamentos                                                                    Sintética
+         2300.80.01   Amortização de Financiamentos de Bens                                                            Analítica
+         2300.80.02   Amortização de Financiamentos de Projetos                                                        Analítica
+       2300.99.00     Amortização de Empréstimos Diversos                                                              Analítica
+ 2400.00.00           Transferências de Capital                                                                        Sintética
+   2420.00.00         Transferências Intergovernamentais                                                               Sintética
+     2421.00.00       Transferências da União                                                                          Sintética
+       2421.01.00     SUS - Sistema Único de Saúde                                                                     Analítica
+       2421.02.00     Programas de Educação                                                                            Analítica
+       2421.37.00     Consórcios Públicos                                                                              Analítica
+       2421.99.00     Outras Transferências da União                                                                   Analítica
+     2422.00.00       Transferências do Estado                                                                         Sintética
+       2422.01.00     SUS - Sistema Único de Saúde                                                                     Analítica
+       2422.02.00     Programas de Educação                                                                            Analítica
+       2422.37.00     Consórcios Públicos                                                                              Analítica
+       2422.99.00     Outras Transferências do Estado                                                                  Analítica
+     2423.00.00       Transferências dos Municípios                                                                    Sintética
+       2423.01.00     SUS - Sistema Único de Saúde                                                                     Analítica
+       2423.02.00     Programas de Educação                                                                            Analítica
+       2423.37.00     Consórcios Públicos                                                                              Analítica
+       2423.99.00     Outras Transferências dos Municípios                                                             Analítica
+   2430.00.00         Transferências de Instituições Privadas                                                          Analítica
+   2440.00.00         Transferências do Exterior                                                                       Analítica
+   2450.00.00         Transferências de Pessoas                                                                        Analítica
+   2460.00.00         Transferência de Outras Instituições Públicas                                                    Analítica
+   2470.00.00         Transferências de Convênios                                                                      Sintética
+     2471.00.00       Transferência de Convênios da União e de suas Entidades                                          Sintética
+       2471.01.00     Programas de Saúde                                                                               Analítica
+       2471.02.00     Programas de Educação                                                                            Analítica
+       2471.03.00     Programas de Saneamento Básico                                                                   Analítica
+       2471.04.00     Programas de Meio Ambiente                                                                       Analítica
+       2471.05.00     Programas de Infra-Estrutura em Transporte                                                       Analítica
+       2471.99.00     Outras Transferências de Convênio da União                                                       Analítica
+     2472.00.00       Transferência de Convênios do Estado e de suas Entidades                                         Sintética
+
+                                                           Página 6 de 7
+                                           TABELA DE CODIFICAÇÃO DAS RECEITAS                                           IN 015/2012
+                                                                                                                           Anexo V
+                                                   VÁLIDO A PARTIR DE 2013
+
+Código               Especificação                                                                                                    Tipo
+        2472.01.00   Programas de Saúde                                                                                             Analítica
+        2472.02.00   Programas de Educação                                                                                          Analítica
+        2472.03.00   Programas de Saneamento Básico                                                                                 Analítica
+        2472.04.00   Programas de Meio Ambiente                                                                                     Analítica
+        2472.05.00   Programas de Infra-Estrutura em Transporte                                                                     Analítica
+        2472.99.00   Outras Transferências de Convênio do Estado                                                                    Analítica
+      2473.00.00     Transferência de Convênios dos Municípios e de suas Entidades                                                  Sintética
+        2473.01.00   Programas de Saúde                                                                                             Analítica
+        2473.02.00   Programas de Educação                                                                                          Analítica
+        2473.99.00   Outras Transferências de Convênio dos Municípios                                                               Analítica
+      2474.00.00     Transferência de Convênios de Instituições Privadas                                                            Analítica
+      2475.00.00     Transferência de Convênio do Exterior                                                                          Analítica
+    2480.00.00       Transferências para o Combate à Fome                                                                           Sintética
+      2481.00.00     Provenientes do Exterior                                                                                       Analítica
+      2482.00.00     Provenientes de Pessoas Jurídicas                                                                              Analítica
+      2483.00.00     Provenientes de Pessoas Físicas                                                                                Analítica
+      2484.00.00     Provenientes de Depósitos não Identificados                                                                    Analítica
+  2500.00.00         Outras Receitas de Capital                                                                                     Sintética
+    2520.00.00       Integralização do Capital Social                                                                               Sintética
+      2521.00.00     Integralização com Recursos do Tesouro                                                                         Analítica
+      2522.00.00     Integralização com Recursos de Outras Fontes                                                                   Analítica
+    2550.00.00       Receita da Dívida Ativa Proveniente de Amortização de Empréstimos e Financiamentos                             Analítica
+    2590.00.00       Outras Receitas                                                                                                Analítica
+7+                   Receitas Correntes Intra-Orçamentárias (substituir o dígito 1 pelo dígito 7)                                   Sintética
+   7210.29.00        Receitas Correntes Intra-Orçamentárias                                                                         Sintética
+   7210.29.01        Contribuição Patronal para RPPS                                                                                Analítica
+   7210.29.03        Contribuição Patronal - Inativo Civil                                                                          Analítica
+   7210.29.05        Contribuição Patronal - Pensionista Civil                                                                      Analítica
+   7210.29.13        Contribuição Previdenciária para Amortização do Déficit Atuarial                                               Analítica
+   7940.00.00        Receitas Decorrentes de Aportes Periódicos para Amortização de Déficit Atuarial do RPPS                        Analítica
+8+                   Receitas de Capital Intra-Orçamentárias (substituir o dígito 2 pelo dígito 8)                                  Sintética
+90000.00.00          Deduções da Receita                                                                                            Sintética
+  91110.00.00        Restituição de Impostos - Indébito Tributário                                                                  Sintética
+    91112.02.00      Restituição IPTU - Imposto sobre a Propriedade Predial e Territorial Urbana                                    Analítica
+    91112.04.31      Restituição IRRF - Imposto de Renda Retido nas Fontes sobre os Rendimentos do Trabalho                         Analítica
+
+   91112.08.00       Restituição ITBI - Imposto sobre Transmissão "Inter Vivos" de Bens Imóveis e de Direitos Reais sobre Imóveis   Analítica
+   91113.05.00       Restituição ISS - Imposto sobre Serviços de Qualquer Natureza                                                  Analítica
+ 91120.00.00         Dedução de Taxas                                                                                               Sintética
+   91121.99.00       Dedução de Outras Taxas pelo Exercício do Poder de Polícia                                                     Analítica
+   91122.99.00       Dedução Outras Taxas pela Prestação de Serviços                                                                Analítica
+ 91320.00.00         Dedução de Valores Mobiliários                                                                                 Sintética
+   91321.00.00       Dedução de Juros de Títulos de Renda                                                                           Analítica
+   91328.00.00       Dedução da Remuneração dos Investimentos do RPPS                                                               Sintética
+     91328.10.00     Dedução da Remuneração dos Investimentos do RPPS em Renda Fixa                                                 Analítica
+     91328.20.00     Dedução da Remuneração dos Investimentos do RPPS em Renda Variável                                             Analítica
+     91328.30.00     Dedução da Remuneração dos Investimentos do RPPS em Fundos Imobiliários                                        Analítica
+ 91330.00.00         Dedução de Receitas de Concessões e Permissões                                                                 Sintética
+   91339.00.00       Dedução de Outras Receitas de Concessões e Permissões                                                          Analítica
+ 91600.13.00         Dedução de Receitas de Serviços Administrativos                                                                Sintética
+ 91600.13.01         Dedução de Receitas de Serviços de Inscrição em Concursos Públicos                                             Analítica
+ 91721.01.00         Dedução das Receitas de Transferências da União                                                                Sintética
+   91721.01.02       Dedução de Receita para Formação do FUNDEB - FPM                                                               Analítica
+   91721.01.05       Dedução de Receita para Formação do FUNDEB - ITR                                                               Analítica
+   91721.36.00       Dedução de Receita para a Formação do FUNDEB - ICMS Desoneração - LC 87/96                                     Analítica
+ 91722.01.00         Dedução das Receitas de Transferência dos Estados                                                              Sintética
+   91722.01.01       Dedução de Receita para a Formação do FUNDEB - ICMS                                                            Analítica
+   91722.01.02       Dedução de Receita para Formação do FUNDEB - IPVA                                                              Analítica
+   91722.01.04       Dedução de Receita para a Formação do FUNDEB - IPI - Exportação                                                Analítica
+ 91750.00.00         Dedução de Transferências de Pessoas                                                                           Analítica
+
+
+
+
+                                                             Página 7 de 7
+
