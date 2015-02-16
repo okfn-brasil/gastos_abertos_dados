@@ -212,7 +212,7 @@ class RevenueExtractor(object):
         self.start_browser()
         self.setup_page()
         self.get_data_by_year()
-        # self.browser.quit()
+        self.browser.quit()
         return caminho_arquivo
 
 
