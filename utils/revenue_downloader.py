@@ -8,7 +8,7 @@ Usage: revenue_downloader [options] [<year>...]
 Options:
 -h, --help                        Show this message.
 -o, --outfolder <outfolder>       Folder where to place files.
-                                  I think it MUST be full path to folder.
+                                  Maybe relative.
                                   [default: current folder]
 -f, --firefox-binary <firefox>    Firefox binary.
                                   [default: /bin/firefox]
