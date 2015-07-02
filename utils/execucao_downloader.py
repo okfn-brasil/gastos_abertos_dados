@@ -21,8 +21,9 @@ execucao_downloader -o nice/path/
 '''
 
 
+from __future__ import unicode_literals  # unicode by default
 import os
-from datetime import date
+import datetime
 # Python 2 and 3...
 try:
     from urllib import urlretrieve
@@ -34,24 +35,52 @@ import pyexcel
 from pyexcel.ext import ods3, xls
 
 
-def convert_spreedsheet(in_file, out_file):
-    # To allow ODS and XLS need these libs imported:
-    ods3 and xls
+def normalize_spreedsheet(sheet):
+    # Normalize column names to lower case
+    # (it changed from mixed to upper at some point in History)
+    sheet.colnames = [i.lower() for i in sheet.colnames]
 
-    sheet = pyexcel.get_sheet(file_name=in_file)
+    # Remove empty column, if exists
+    try:
+        del sheet.column['']
+    except ValueError:
+        pass
+    # if sheet.colnames[-1] == '':
+    #     last_column = len(sheet.colnames) - 1
+    #     del sheet.column[last_column]
 
-    # Remove last column when it is empty
-    if sheet.row[0][-1] == '':
-        last_column = len(sheet.row[0]) - 1
-        del sheet.column[last_column]
     # Remove last row when it is empty
     if sheet.column[0][-1] == '':
         last_row = len(sheet.column[0]) - 1
         del sheet.row[last_row]
-    # Normalize column names to lower case
-    # (it changed from mixed to upper at some point in History)
-    sheet.row[0] = [i.lower() for i in sheet.row[0]]
 
+    # Convert float years to int
+    for colname in ["cd_anoexecucao", "cd_exercicio"]:
+        try:
+            index = sheet.colnames.index(colname)
+            sheet.column.format(index, int)
+        except ValueError:
+            pass
+
+    # Nomalize dates
+    def norm_date(value):
+        if not (isinstance(value, datetime.date) or
+                isinstance(value, datetime.datetime)):
+            value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
+        return datetime.datetime.strftime(value, "%Y-%m-%d")
+    for colname in ["datainicial", "datafinal"]:
+        try:
+            index = sheet.colnames.index(colname)
+            sheet.column.format(index, norm_date)
+        except ValueError:
+            pass
+
+def convert_spreedsheet(in_file, out_file):
+    # To allow ODS and XLS need these libs imported:
+    ods3 and xls
+
+    sheet = pyexcel.get_sheet(file_name=in_file, name_columns_by_row=0)
+    normalize_spreedsheet(sheet)
     sheet.save_as(out_file)
 
 
@@ -81,7 +110,7 @@ def download_year(year, outpath):
 def download_all(outpath):
     """Download all years to 'outpath'."""
     first_year = 2003
-    current_year = date.today().year
+    current_year = datetime.date.today().year
     for year in range(first_year, current_year+1):
         download_year(str(year), outpath)
 
