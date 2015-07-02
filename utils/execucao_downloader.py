@@ -39,6 +39,19 @@ def convert_spreedsheet(in_file, out_file):
     ods3 and xls
 
     sheet = pyexcel.get_sheet(file_name=in_file)
+
+    # Remove last column when it is empty
+    if sheet.row[0][-1] == '':
+        last_column = len(sheet.row[0]) - 1
+        del sheet.column[last_column]
+    # Remove last row when it is empty
+    if sheet.column[0][-1] == '':
+        last_row = len(sheet.column[0]) - 1
+        del sheet.row[last_row]
+    # Normalize column names to lower case
+    # (it changed from mixed to upper at some point in History)
+    sheet.row[0] = [i.lower() for i in sheet.row[0]]
+
     sheet.save_as(out_file)
 
 
