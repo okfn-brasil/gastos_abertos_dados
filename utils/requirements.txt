@@ -1,0 +1,5 @@
+pyexcel
+pyexcel-xls
+ods3
+lxml
+dococpt
