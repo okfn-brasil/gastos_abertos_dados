@@ -33,9 +33,14 @@ except:
 from docopt import docopt
 import pyexcel
 from pyexcel.ext import ods3, xls
+# To allow ODS and XLS need these libs imported:
+ods3 and xls
+# (yes, I know, the above line seems useless, but it avoids "imported but
+# unused" warnings in my Python linter [*genious*] =P )
 
 
-def normalize_spreedsheet(sheet):
+def normalize_spreadsheet(sheet):
+    """Tries to normalize small differences between spreadsheets."""
     # Normalize column names to lower case
     # (it changed from mixed to upper at some point in History)
     sheet.colnames = [i.lower() for i in sheet.colnames]
@@ -75,12 +80,12 @@ def normalize_spreedsheet(sheet):
         except ValueError:
             pass
 
-def convert_spreedsheet(in_file, out_file):
-    # To allow ODS and XLS need these libs imported:
-    ods3 and xls
 
+def convert_spreadsheet(in_file, out_file):
+    """Converts from one format of spreadsheet to another, normalizing in the
+    process."""
     sheet = pyexcel.get_sheet(file_name=in_file, name_columns_by_row=0)
-    normalize_spreedsheet(sheet)
+    normalize_spreadsheet(sheet)
     sheet.save_as(out_file)
 
 
@@ -103,7 +108,7 @@ def download_year(year, outpath):
         outfilepath = os.path.join(outpath, "%s.xls" % year)
         urlretrieve(url, outfilepath)
     # Convert to CSV
-    convert_spreedsheet(outfilepath, os.path.join(outpath, "%s.csv" % year))
+    convert_spreadsheet(outfilepath, os.path.join(outpath, "%s.csv" % year))
     print(year + " done")
 
 
@@ -126,4 +131,3 @@ if __name__ == '__main__':
     else:
         for year in years:
             download_year(year, out_folder)
-    # download_all(out_folder)
