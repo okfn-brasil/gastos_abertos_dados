@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-''' Downloads execucao data. If no 'year' is passed, download all.
+''' Downloads, converts and normalize execucao data. If no 'year' is passed,
+download all.
 
 Usage: execucao_downloader [options] [<year>...]
 
@@ -31,6 +32,7 @@ except:
     from urllib.request import urlretrieve
 
 from docopt import docopt
+import pandas as pd
 import pyexcel
 from pyexcel.ext import ods3, xls
 # To allow ODS and XLS need these libs imported:
@@ -39,59 +41,145 @@ ods3 and xls
 # unused" warnings in my Python linter [*genious*] =P )
 
 
-def normalize_spreadsheet(sheet):
-    """Tries to normalize small differences between spreadsheets."""
+def normalize_csv(csv_path):
+    """Tries to normalize small differences between csvs."""
+
+    table = pd.read_csv(csv_path)
+
     # Normalize column names to lower case
     # (it changed from mixed to upper at some point in History)
-    sheet.colnames = [i.lower() for i in sheet.colnames]
-
+    table.columns = [c.lower() for c in table.columns]
     # Remove empty column, if exists
-    try:
-        del sheet.column['']
-    except ValueError:
-        pass
-    # if sheet.colnames[-1] == '':
-    #     last_column = len(sheet.colnames) - 1
-    #     del sheet.column[last_column]
+    table = table.select(lambda x: x.find('unnamed'), axis=1)
 
     # Remove last row when it is empty
-    if sheet.column[0][-1] == '':
-        last_row = len(sheet.column[0]) - 1
-        del sheet.row[last_row]
+    last_line = table.iloc[-1]
+    if len(last_line) == last_line.isnull().values.sum():
+        table.drop(table.index[-1], inplace=True)
 
     # Convert float years to int
     for colname in ["cd_anoexecucao", "cd_exercicio"]:
         try:
-            index = sheet.colnames.index(colname)
-            sheet.column.format(index, int)
-        except ValueError:
+            table[colname] = table[colname].apply(int)
+        except KeyError:
             pass
 
     # Nomalize dates
     def norm_date(value):
         if not (isinstance(value, datetime.date) or
                 isinstance(value, datetime.datetime)):
-            value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
+            try:
+                value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
+            except ValueError:
+                try:
+                    value = datetime.datetime.strptime(value,
+                                                       "%Y-%m-%d %H:%M:%S")
+                except ValueError:
+                    value = datetime.datetime.strptime(value, "%Y-%m-%d")
         return datetime.datetime.strftime(value, "%Y-%m-%d")
     for colname in ["datainicial", "datafinal"]:
-        try:
-            index = sheet.colnames.index(colname)
-            sheet.column.format(index, norm_date)
-        except ValueError:
-            pass
+        table[colname] = table[colname].apply(norm_date)
+
+    # Attempt to remove lines that have different monetary values, all the
+    # other columns are equal. This happens in old years and unable PKs.
+    # Hopefully the first column with monetary values is "sld_orcado_ano" for
+    # all the data...
+    col_names = table.columns.tolist()
+    first_monetary_col = col_names.index('sld_orcado_ano')
+    non_values = col_names[:first_monetary_col]
+    table = table.groupby(non_values, as_index=False).sum()
+
+    # Check for codes uniqueness
+    code_series = [col for name, col in table.iteritems()
+                   if name[:3].lower() == "cd_"]
+    # this column doesn't start with "cd_" but is a code
+    code_series.append(table["projetoatividade"])
+    # create table of codes
+    code_table = pd.concat(code_series, axis=1)
+    # create PK Series
+    pks = pd.Series(['.'.join([str(i) for i in i[1][1:]])
+                    for i in code_table.iterrows()],
+                    name="pk")
+    # check pk uniqueness
+    if pks.duplicated().values.sum() > 0:
+        print("Warning: There are duplicated pks!")
+
+    # values = table.ix[:, 'sld_orcado_ano':]
+    # # Select only lines not all zero
+    # values.loc[(values != 0).any(1)]
+    # # Select only zero lines
+    # values.loc[(values == 0).all(1)]
+    # # TODO: DROP!!!!!!??????
+
+
+    # # Normalize column names to lower case
+    # # (it changed from mixed to upper at some point in History)
+    # sheet.colnames = [i.lower() for i in sheet.colnames]
+
+    # # Remove empty column, if exists
+    # try:
+    #     del sheet.column['']
+    # except ValueError:
+    #     pass
+
+    # # Remove last row when it is empty
+    # if sheet.column[0][-1] == '':
+    #     last_row = len(sheet.column[0]) - 1
+    #     del sheet.row[last_row]
+
+    # # Convert float years to int
+    # for colname in ["cd_anoexecucao", "cd_exercicio"]:
+    #     try:
+    #         index = sheet.colnames.index(colname)
+    #         sheet.column.format(index, int)
+    #     except ValueError:
+    #         pass
+
+    # # Remove rows that have 0 in all monetary values (they unable the existence
+    # # of unique primary keys [at least in old years])
+    # # Hopefully the first column with monetary values is this for all the
+    # # data...
+    # first_monetary_col = sheet.colnames.index('sld_orcado_ano')
+    # cc = 0
+    # for row in sheet.rows():
+    #     cc += 1
+    #     print(cc)
+    #     all_zero = True
+    #     for cell in row[first_monetary_col:]:
+    #         if cell not in [0, "0", "0.0"]:
+    #             all_zero = False
+    #             break
+    #     if all_zero:
+    #         print(row)
+    #         del row
+
+    # # Nomalize dates
+    # def norm_date(value):
+    #     if not (isinstance(value, datetime.date) or
+    #             isinstance(value, datetime.datetime)):
+    #         value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
+    #     return datetime.datetime.strftime(value, "%Y-%m-%d")
+    # for colname in ["datainicial", "datafinal"]:
+    #     try:
+    #         index = sheet.colnames.index(colname)
+    #         sheet.column.format(index, norm_date)
+    #     except ValueError:
+    #         pass
+
+    table.to_csv(csv_path, index=False)
 
 
 def convert_spreadsheet(in_file, out_file):
-    """Converts from one format of spreadsheet to another, normalizing in the
-    process."""
+    """Converts from one format of spreadsheet to another."""
     sheet = pyexcel.get_sheet(file_name=in_file, name_columns_by_row=0)
-    normalize_spreadsheet(sheet)
     sheet.save_as(out_file)
 
 
 def download_year(year, outpath):
     """Download a year to 'outpath'.
     'year' should be a string."""
+
+    print("> " + year)
     baseurl = "http://orcamento.prefeitura.sp.gov.br/orcamento/uploads/"
     url = baseurl + "{year}/basedadosexecucao{year}.ods".format(year=year)
     outfilepath = os.path.join(outpath, "%s.ods" % year)
@@ -107,9 +195,16 @@ def download_year(year, outpath):
         url = baseurl + "{year}/basedadosexecucao{year}.xls".format(year=year)
         outfilepath = os.path.join(outpath, "%s.xls" % year)
         urlretrieve(url, outfilepath)
+    print("downloaded")
+
+    csv_path = os.path.join(outpath, "%s.csv" % year)
+
     # Convert to CSV
-    convert_spreadsheet(outfilepath, os.path.join(outpath, "%s.csv" % year))
-    print(year + " done")
+    convert_spreadsheet(outfilepath, csv_path)
+    print("converted")
+
+    normalize_csv(csv_path)
+    print("normalized")
 
 
 def download_all(outpath):
