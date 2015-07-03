@@ -78,7 +78,8 @@ def normalize_csv(csv_path):
                     value = datetime.datetime.strptime(value, "%Y-%m-%d")
         return datetime.datetime.strftime(value, "%Y-%m-%d")
     for colname in ["datainicial", "datafinal"]:
-        table[colname] = table[colname].apply(norm_date)
+        if colname in table.columns:
+            table[colname] = table[colname].apply(norm_date)
 
     # Attempt to remove lines that have different monetary values, all the
     # other columns are equal. This happens in old years and unable PKs.
@@ -89,7 +90,7 @@ def normalize_csv(csv_path):
     non_values = col_names[:first_monetary_col]
     table = table.groupby(non_values, as_index=False).sum()
 
-    # Check for codes uniqueness
+    # Get codes cols
     code_series = [col for name, col in table.iteritems()
                    if name[:3].lower() == "cd_"]
     # this column doesn't start with "cd_" but is a code
@@ -103,68 +104,6 @@ def normalize_csv(csv_path):
     # check pk uniqueness
     if pks.duplicated().values.sum() > 0:
         print("Warning: There are duplicated pks!")
-
-    # values = table.ix[:, 'sld_orcado_ano':]
-    # # Select only lines not all zero
-    # values.loc[(values != 0).any(1)]
-    # # Select only zero lines
-    # values.loc[(values == 0).all(1)]
-    # # TODO: DROP!!!!!!??????
-
-
-    # # Normalize column names to lower case
-    # # (it changed from mixed to upper at some point in History)
-    # sheet.colnames = [i.lower() for i in sheet.colnames]
-
-    # # Remove empty column, if exists
-    # try:
-    #     del sheet.column['']
-    # except ValueError:
-    #     pass
-
-    # # Remove last row when it is empty
-    # if sheet.column[0][-1] == '':
-    #     last_row = len(sheet.column[0]) - 1
-    #     del sheet.row[last_row]
-
-    # # Convert float years to int
-    # for colname in ["cd_anoexecucao", "cd_exercicio"]:
-    #     try:
-    #         index = sheet.colnames.index(colname)
-    #         sheet.column.format(index, int)
-    #     except ValueError:
-    #         pass
-
-    # # Remove rows that have 0 in all monetary values (they unable the existence
-    # # of unique primary keys [at least in old years])
-    # # Hopefully the first column with monetary values is this for all the
-    # # data...
-    # first_monetary_col = sheet.colnames.index('sld_orcado_ano')
-    # cc = 0
-    # for row in sheet.rows():
-    #     cc += 1
-    #     print(cc)
-    #     all_zero = True
-    #     for cell in row[first_monetary_col:]:
-    #         if cell not in [0, "0", "0.0"]:
-    #             all_zero = False
-    #             break
-    #     if all_zero:
-    #         print(row)
-    #         del row
-
-    # # Nomalize dates
-    # def norm_date(value):
-    #     if not (isinstance(value, datetime.date) or
-    #             isinstance(value, datetime.datetime)):
-    #         value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
-    #     return datetime.datetime.strftime(value, "%Y-%m-%d")
-    # for colname in ["datainicial", "datafinal"]:
-    #     try:
-    #         index = sheet.colnames.index(colname)
-    #         sheet.column.format(index, norm_date)
-    #     except ValueError:
-    #         pass
 
     table.to_csv(csv_path, index=False)
 
