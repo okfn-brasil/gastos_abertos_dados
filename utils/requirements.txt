@@ -2,4 +2,4 @@ pyexcel
 pyexcel-xls
 pyexcel-ods3
 lxml
-dococpt
+docopt
