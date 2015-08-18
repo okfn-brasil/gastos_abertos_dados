@@ -12,7 +12,7 @@ Options:
                                   Can be relative.
                                   [default: current folder]
 
-Exemples:
+Examples:
 
 execucao_downloader 2014
 (downloads year 2014)
@@ -37,12 +37,12 @@ import pyexcel
 from pyexcel.ext import ods3, xls
 # To allow ODS and XLS need these libs imported:
 ods3 and xls
-# (yes, I know, the above line seems useless, but it avoids "imported but
-# unused" warnings in my Python linter [*genious*] =P )
+# (yes, I know, the above line seems useless, but it avoids 'imported but
+# unused' warnings in my Python linter [*genious*] =P )
 
 
 def normalize_csv(csv_path):
-    """Tries to normalize small differences between csvs."""
+    '''Tries to normalize small differences between csvs.'''
 
     table = pd.read_csv(csv_path)
 
@@ -58,7 +58,7 @@ def normalize_csv(csv_path):
         table.drop(table.index[-1], inplace=True)
 
     # Convert float years to int
-    for colname in ["cd_anoexecucao", "cd_exercicio"]:
+    for colname in ['cd_anoexecucao', 'cd_exercicio']:
         try:
             table[colname] = table[colname].apply(int)
         except KeyError:
@@ -69,21 +69,21 @@ def normalize_csv(csv_path):
         if not (isinstance(value, datetime.date) or
                 isinstance(value, datetime.datetime)):
             try:
-                value = datetime.datetime.strptime(value, "%d/%m/%Y %H:%M:%S")
+                value = datetime.datetime.strptime(value, '%d/%m/%Y %H:%M:%S')
             except ValueError:
                 try:
                     value = datetime.datetime.strptime(value,
-                                                       "%Y-%m-%d %H:%M:%S")
+                                                       '%Y-%m-%d %H:%M:%S')
                 except ValueError:
-                    value = datetime.datetime.strptime(value, "%Y-%m-%d")
-        return datetime.datetime.strftime(value, "%Y-%m-%d")
-    for colname in ["datainicial", "datafinal"]:
+                    value = datetime.datetime.strptime(value, '%Y-%m-%d')
+        return datetime.datetime.strftime(value, '%Y-%m-%d')
+    for colname in ['datainicial', 'datafinal']:
         if colname in table.columns:
             table[colname] = table[colname].apply(norm_date)
 
     # Attempt to remove lines that have different monetary values, all the
     # other columns are equal. This happens in old years and unable PKs.
-    # Hopefully the first column with monetary values is "sld_orcado_ano" for
+    # Hopefully the first column with monetary values is 'sld_orcado_ano' for
     # all the data...
     col_names = table.columns.tolist()
     first_monetary_col = col_names.index('sld_orcado_ano')
@@ -92,36 +92,47 @@ def normalize_csv(csv_path):
 
     # Get codes cols
     code_series = [col for name, col in table.iteritems()
-                   if name[:3].lower() == "cd_"]
-    # this column doesn't start with "cd_" but is a code
-    code_series.append(table["projetoatividade"])
+                   if name[:3].lower() == 'cd_']
+    # this column doesn't start with 'cd_' but is a code
+    code_series.append(table['projetoatividade'])
     # create table of codes
     code_table = pd.concat(code_series, axis=1)
     # create PK Series
     pks = pd.Series(['.'.join([str(i) for i in i[1][1:]])
                     for i in code_table.iterrows()],
-                    name="pk")
+                    name='pk')
     # check pk uniqueness
     if pks.duplicated().values.sum() > 0:
-        print("Warning: There are duplicated pks!")
+        print('Warning: There are duplicated pks!')
 
     table.to_csv(csv_path, index=False)
 
 
 def convert_spreadsheet(in_file, out_file):
-    """Converts from one format of spreadsheet to another."""
+    '''Converts from one format of spreadsheet to another.'''
     sheet = pyexcel.get_sheet(file_name=in_file, name_columns_by_row=0)
     sheet.save_as(out_file)
 
 
-def download_year(year, outpath):
-    """Download a year to 'outpath'.
-    'year' should be a string."""
+def convert_to_csv(infilepath, outpath):
+    '''Convert to CSV.'''
+    csv_name = os.path.splitext(os.path.basename(infilepath))[0] + '.csv'
+    csv_path = os.path.join(outpath, csv_name)
+    convert_spreadsheet(infilepath, csv_path)
+    print('converted')
+    normalize_csv(csv_path)
+    print('normalized')
+    return csv_path
 
-    print("> " + year)
-    baseurl = "http://orcamento.prefeitura.sp.gov.br/orcamento/uploads/"
-    url = baseurl + "{year}/basedadosexecucao{year}.ods".format(year=year)
-    outfilepath = os.path.join(outpath, "%s.ods" % year)
+
+def download_year(year, outpath):
+    '''Download a year to 'outpath'. Returns te path to the downloaded file.
+    'year' should be a string.'''
+
+    print('> ' + year)
+    baseurl = 'http://orcamento.prefeitura.sp.gov.br/orcamento/uploads/'
+    url = baseurl + '{year}/basedadosexecucao{year}.ods'.format(year=year)
+    outfilepath = os.path.join(outpath, '%s.ods' % year)
     # Try to get ODS
     try:
         _, r = urlretrieve(url, outfilepath)
@@ -131,34 +142,28 @@ def download_year(year, outpath):
             raise
     except:
         # Try to get XLS
-        url = baseurl + "{year}/basedadosexecucao{year}.xls".format(year=year)
-        outfilepath = os.path.join(outpath, "%s.xls" % year)
+        url = baseurl + '{year}/basedadosexecucao{year}.xls'.format(year=year)
+        outfilepath = os.path.join(outpath, '%s.xls' % year)
         urlretrieve(url, outfilepath)
-    print("downloaded")
+    print('downloaded')
 
-    csv_path = os.path.join(outpath, "%s.csv" % year)
-
-    # Convert to CSV
-    convert_spreadsheet(outfilepath, csv_path)
-    print("converted")
-
-    normalize_csv(csv_path)
-    print("normalized")
+    return outfilepath
 
 
 def download_all(outpath):
-    """Download all years to 'outpath'."""
+    '''Download all years to 'outpath'.'''
     first_year = 2003
     current_year = datetime.date.today().year
     for year in range(first_year, current_year+1):
-        download_year(str(year), outpath)
+        outfilepath = download_year(str(year), outpath)
+        convert_to_csv(outfilepath, outpath)
 
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
     out_folder = arguments['--outfolder']
     years = arguments['<year>']
-    if out_folder == "current folder":
+    if out_folder == 'current folder':
         out_folder = os.getcwd()
     if not years:
         download_all(out_folder)
