@@ -1,5 +1,5 @@
 pyexcel
 pyexcel-xls
-ods3
+pyexcel-ods3
 lxml
 dococpt
