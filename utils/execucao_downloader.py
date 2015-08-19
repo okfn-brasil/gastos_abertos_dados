@@ -57,11 +57,16 @@ def normalize_csv(csv_path):
     if len(last_line) == last_line.isnull().values.sum():
         table.drop(table.index[-1], inplace=True)
 
-    # Convert float years to int
-    for colname in ['cd_anoexecucao', 'cd_exercicio']:
+    # Convert float years/codes to int
+    code_series = [col for name, col in table.iteritems()
+                   if name[:3] == 'cd_']
+    # this column doesn't start with 'cd_' but is a code
+    code_series.append(table['projetoatividade'])
+    for col in code_series:
         try:
-            table[colname] = table[colname].apply(int)
+            table[col.name] = col.apply(int)
         except KeyError:
+            print("Failed when trying to convert codes to int!")
             pass
 
     # Nomalize dates
@@ -81,7 +86,7 @@ def normalize_csv(csv_path):
         if colname in table.columns:
             table[colname] = table[colname].apply(norm_date)
 
-    # Attempt to remove lines that have different monetary values, all the
+    # Attempt to sum lines that have different monetary values but all the
     # other columns are equal. This happens in old years and unable PKs.
     # Hopefully the first column with monetary values is 'sld_orcado_ano' for
     # all the data...
@@ -118,10 +123,10 @@ def convert_to_csv(infilepath, outpath):
     '''Convert to CSV.'''
     csv_name = os.path.splitext(os.path.basename(infilepath))[0] + '.csv'
     csv_path = os.path.join(outpath, csv_name)
+    print('converting...')
     convert_spreadsheet(infilepath, csv_path)
-    print('converted')
+    print('normalizing...')
     normalize_csv(csv_path)
-    print('normalized')
     return csv_path
 
 
@@ -150,13 +155,18 @@ def download_year(year, outpath):
     return outfilepath
 
 
-def download_all(outpath):
-    '''Download all years to 'outpath'.'''
+def process_year(year, outpath):
+    '''Downloads a year data and converts to CSV.'''
+    outfilepath = download_year(str(year), outpath)
+    convert_to_csv(outfilepath, outpath)
+
+
+def process_all(outpath):
+    '''Process all years to 'outpath'.'''
     first_year = 2003
     current_year = datetime.date.today().year
     for year in range(first_year, current_year+1):
-        outfilepath = download_year(str(year), outpath)
-        convert_to_csv(outfilepath, outpath)
+        process_year(year, outpath)
 
 
 if __name__ == '__main__':
@@ -166,7 +176,7 @@ if __name__ == '__main__':
     if out_folder == 'current folder':
         out_folder = os.getcwd()
     if not years:
-        download_all(out_folder)
+        process_all(out_folder)
     else:
         for year in years:
-            download_year(year, out_folder)
+            process_year(year, out_folder)
