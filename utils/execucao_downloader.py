@@ -41,6 +41,22 @@ ods3 and xls
 # unused' warnings in my Python linter [*genious*] =P )
 
 
+def convert_codes_to_int(table):
+    '''Convert float years/codes to int'''
+    non_monetary_series = [col for name, col in table.iteritems()
+                           if name[:3] != 'vl_' and name[:4] != 'sld_']
+    # code_series = []
+    for col in non_monetary_series:
+        # Checks if column has only integers
+        try:
+            table[col.name] = col.apply(int)
+            # code_series.append(col)
+        except ValueError:
+            pass
+    return non_monetary_series
+    # return code_series
+
+
 def normalize_csv(csv_path):
     '''Tries to normalize small differences between csvs.'''
 
@@ -57,17 +73,7 @@ def normalize_csv(csv_path):
     if len(last_line) == last_line.isnull().values.sum():
         table.drop(table.index[-1], inplace=True)
 
-    # Convert float years/codes to int
-    code_series = [col for name, col in table.iteritems()
-                   if name[:3] == 'cd_']
-    # this column doesn't start with 'cd_' but is a code
-    code_series.append(table['projetoatividade'])
-    for col in code_series:
-        try:
-            table[col.name] = col.apply(int)
-        except KeyError:
-            print("Failed when trying to convert codes to int!")
-            pass
+    non_monetary_series = convert_codes_to_int(table)
 
     # Nomalize dates
     def norm_date(value):
@@ -88,14 +94,13 @@ def normalize_csv(csv_path):
 
     # Attempt to sum lines that have different monetary values but all the
     # other columns are equal. This happens in old years and unable PKs.
-    # Hopefully the first column with monetary values is 'sld_orcado_ano' for
-    # all the data...
-    col_names = table.columns.tolist()
-    first_monetary_col = col_names.index('sld_orcado_ano')
-    non_values = col_names[:first_monetary_col]
-    table = table.groupby(non_values, as_index=False).sum()
+    non_monetary_names = [col.name for col in non_monetary_series]
+    num_duplicated_rows = table[non_monetary_names].duplicated().sum()
+    if num_duplicated_rows:
+        table = table.groupby(non_monetary_names, as_index=False).sum()
+        print('%s rows had all non monetary values repeated and were summed.' %
+              num_duplicated_rows)
 
-    # Get codes cols
     code_series = [col for name, col in table.iteritems()
                    if name[:3].lower() == 'cd_']
     # this column doesn't start with 'cd_' but is a code
@@ -135,6 +140,7 @@ def download_year(year, outpath):
     'year' should be a string.'''
 
     print('> ' + year)
+    print('downloading...')
     baseurl = 'http://orcamento.prefeitura.sp.gov.br/orcamento/uploads/'
     url = baseurl + '{year}/basedadosexecucao{year}.ods'.format(year=year)
     outfilepath = os.path.join(outpath, '%s.ods' % year)
@@ -150,7 +156,6 @@ def download_year(year, outpath):
         url = baseurl + '{year}/basedadosexecucao{year}.xls'.format(year=year)
         outfilepath = os.path.join(outpath, '%s.xls' % year)
         urlretrieve(url, outfilepath)
-    print('downloaded')
 
     return outfilepath
 
