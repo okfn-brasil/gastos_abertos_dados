@@ -141,7 +141,7 @@ def download_year(year, outpath):
 
     print('> ' + year)
     print('downloading...')
-    baseurl = 'http://orcamento.prefeitura.sp.gov.br/orcamento/uploads/'
+    baseurl = 'http://orcamento.sf.prefeitura.sp.gov.br/orcamento/uploads/'
     url = baseurl + '{year}/basedadosexecucao{year}.ods'.format(year=year)
     outfilepath = os.path.join(outpath, '%s.ods' % year)
     # Try to get ODS
