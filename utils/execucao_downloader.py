@@ -86,7 +86,11 @@ def normalize_csv(csv_path):
                     value = datetime.datetime.strptime(value,
                                                        '%Y-%m-%d %H:%M:%S')
                 except ValueError:
-                    value = datetime.datetime.strptime(value, '%Y-%m-%d')
+                    try:
+                        value = datetime.datetime.strptime(value, '%Y-%m-%d')
+                    except ValueError:
+                        value = datetime.datetime.strptime(
+                            value.split()[0], '%Y-%m-%d')
         return datetime.datetime.strftime(value, '%Y-%m-%d')
     for colname in ['datainicial', 'datafinal']:
         if colname in table.columns:
